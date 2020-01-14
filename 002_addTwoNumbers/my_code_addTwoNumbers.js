@@ -38,9 +38,116 @@ c = {
   next: null
 }
 
+
 d = {
   val: 0,
   next: null
+}
+
+let e = {
+  val: 1,
+  next:{
+    val: 0,
+    next:{
+      val: 0,
+      next:{
+        val: 0,
+        next:{
+          val: 0,
+          next:{
+            val: 0,
+            next:{
+              val: 0,
+              next:{
+                val: 0,
+                next:{
+                  val: 0,
+                  next:{
+                    val: 0,
+                    next:{
+                      val: 0,
+                      next:{
+                        val: 0,
+                        next:{
+                          val: 0,
+                          next:{
+                            val: 0,
+                            next:{
+                              val: 0,
+                              next:{
+                                val: 0,
+                                next:{
+                                  val: 0,
+                                  next:{
+                                    val: 0,
+                                    next:{
+                                      val: 0,
+                                      next:{
+                                        val: 0,
+                                        next:{
+                                          val: 0,
+                                          next:{
+                                            val: 0,
+                                            next:{
+                                              val: 0,
+                                              next:{
+                                                val: 0,
+                                                next:{
+                                                  val: 0,
+                                                  next:{
+                                                    val: 0,
+                                                    next:{
+                                                      val: 0,
+                                                      next:{
+                                                        val: 0,
+                                                        next:{
+                                                          val: 0,
+                                                          next:{
+                                                            val: 0,
+                                                            next:{
+                                                              val: 1,
+                                                              next: null
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+let f = {
+  val: 5,
+  next: {
+    val: 6,
+    next:{
+      val: 4,
+      next: null
+    }
+  }
 }
 
 console.log('a: ', a)
@@ -67,11 +174,11 @@ var addTwoNumbers = function(l1, l2) {
     check2 = check2.next
     count2++
   }
-
   console.log('num1: ', num1)
   console.log('num2: ', num2)
   
   let total = parseInt(num1) + parseInt(num2)
+  console.log('total: ', total)
   let splitTotal = total.toString().split('')
   console.log('splitTotal: ', splitTotal)
 
@@ -81,9 +188,7 @@ var addTwoNumbers = function(l1, l2) {
     next: null
   }
 
-  console.log('splitTotal.length: ', splitTotal.length)
   if(splitTotal.length <= 1){
-    console.log('spl')
     return {
       val: parseInt(splitTotal[0]),
       next: null
@@ -108,10 +213,8 @@ console.log('BREAKKKKKKKKKKKK')
 
 console.log(addTwoNumbers(c,d))
 
+console.log('BREAKKKKKKKKKKKK')
 
 
-const addTwoRecurs = (l1, l2) => {
+console.log(addTwoNumbers(e,f))
 
-
-
-}
