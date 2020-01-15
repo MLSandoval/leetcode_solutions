@@ -219,3 +219,6 @@ console.log('BREAKKKKKKKKKKKK')
 
 console.log(addTwoNumbers(e,f))
 
+//recursive
+//map both lists into arrays to make easier to manipulate
+//conditionals to check array length, if > 1 shift value and manipulate as needed, if 0 end recurse
