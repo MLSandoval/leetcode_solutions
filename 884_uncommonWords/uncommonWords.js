@@ -9,7 +9,6 @@ uncommonFromSentences = function(A, B) {
         }else{
             map.set(el, ++temp)
         }
-        
     });
     
     B.split(" ").forEach(el => {
@@ -19,7 +18,6 @@ uncommonFromSentences = function(A, B) {
         }else{
             map.set(el, ++temp)
         }
-        
     });
     
     map.forEach((val,key) => {
